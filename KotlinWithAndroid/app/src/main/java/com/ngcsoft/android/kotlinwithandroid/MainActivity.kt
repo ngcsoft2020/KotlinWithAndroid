@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             //  Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
             //the way of declaring second parameter in intent object is known as Kotlin reflations
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("user_msg",msg)
             startActivity(intent)
         }
     }
